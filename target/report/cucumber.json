@@ -1,0 +1,150 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "line": 10,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 4572500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "que estou no sistema JSONPlaceholder",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.queEstouNoSistemaJSONPlaceholder()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-07T16:34:50.224Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2999700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.Hooks.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Deleta um post na API JSONPlaceholder",
+        "description": "",
+        "id": "gerenciamento-de-posts-na-api-jsonplaceholder;deleta-um-post-na-api-jsonplaceholder",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "output": [
+              "DADOS ENVIADOS NO REQUEST",
+              "GEThttps://jsonplaceholder.typicode.com/posts/1",
+              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "DADOS RECEBIDOS",
+              "Status code: 200",
+              "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
+              "Tempo de resposta 917"
+            ],
+            "result": {
+              "duration": 2499535500,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "existe um post na api",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.existeUmPostNaApi()"
+            },
+            "keyword": "E "
+          },
+          {
+            "output": [
+              "DADOS ENVIADOS NO REQUEST",
+              "GEThttps://jsonplaceholder.typicode.com/posts/1",
+              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "DADOS RECEBIDOS",
+              "Status code: 200",
+              "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
+              "Tempo de resposta 82",
+              "DADOS ENVIADOS NO REQUEST",
+              "DELETEhttps://jsonplaceholder.typicode.com/posts/1",
+              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "DADOS RECEBIDOS",
+              "Status code: 200",
+              "Payload recebido: \n{\n    \n}",
+              "Tempo de resposta 336"
+            ],
+            "result": {
+              "duration": 448921700,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "deleto esse post",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.deletoEssePost()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 18161400,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "o post deve ser deletado com sucesso",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.oPostDeveSerDeletadoComSucesso()"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 2004100,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "o status code do request deve ser 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.oStatusCodeDoRequestDeveSer(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@delete"
+          }
+        ]
+      }
+    ],
+    "name": "Gerenciamento de posts na api JSONPlaceholder",
+    "description": "  Eu como administrador do sistema JSONPlaceholder\n  Quero criar, atualizar e excluir posts do sistema",
+    "id": "gerenciamento-de-posts-na-api-jsonplaceholder",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/Posts.feature",
+    "tags": []
+  }
+]

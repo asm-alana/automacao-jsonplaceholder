@@ -11,10 +11,9 @@ import java.io.IOException;
 @CucumberOptions(
         plugin = {"pretty", "html:target/report.html", "json:target/report/cucumber.json"},
         features = {"src/test/resources/features"},
-        glue = {"steps"},
-        tags = ""
+        glue = {"com/typicode/jsonplaceholder/steps"},
+        tags = "@delete"
 )
-
 
 public class RunTest {
     @AfterClass
