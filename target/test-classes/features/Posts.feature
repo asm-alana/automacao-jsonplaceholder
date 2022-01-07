@@ -3,6 +3,7 @@
 #version: 1.0
 #enconding: UTF-8
 
+  @regressivo
 Funcionalidade: Gerenciamento de posts na api JSONPlaceholder
   Eu como administrador do sistema JSONPlaceholder
   Quero criar, atualizar e excluir posts do sistema
@@ -17,7 +18,7 @@ Cenario: Cria novo post na API JSONPlaceholder
   E o status code do request deve ser 201
 
   @get
-Cenario: Busca post na
+Cenario: Busca post na API JSONPlaceholder
   Quando busco um post ja existente
   Entao os dados do post devem ser retornados
   E o status code do request deve ser 200

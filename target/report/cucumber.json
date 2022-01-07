@@ -1,9 +1,9 @@
 [
   {
-    "line": 6,
+    "line": 7,
     "elements": [
       {
-        "line": 10,
+        "line": 11,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4572500,
+              "duration": 3997700,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "que estou no sistema JSONPlaceholder",
             "match": {
               "location": "com.typicode.jsonplaceholder.steps.PostsSteps.queEstouNoSistemaJSONPlaceholder()"
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-01-07T16:34:50.224Z",
+        "start_timestamp": "2022-01-07T16:42:18.579Z",
         "before": [
           {
             "result": {
-              "duration": 2999700,
+              "duration": 3324500,
               "status": "passed"
             },
             "match": {
@@ -36,7 +36,498 @@
             }
           }
         ],
-        "line": 40,
+        "line": 15,
+        "name": "Cria novo post na API JSONPlaceholder",
+        "description": "",
+        "id": "gerenciamento-de-posts-na-api-jsonplaceholder;cria-novo-post-na-api-jsonplaceholder",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "output": [
+              "DADOS ENVIADOS NO REQUEST",
+              "POSThttps://jsonplaceholder.typicode.com/posts",
+              "Body: \n{\"id\":101,\"body\":\"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\",\"userId\":1,\"tittle\":\"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\"}",
+              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "DADOS RECEBIDOS",
+              "Status code: 201",
+              "Payload recebido: \n{\n    \"id\": 101,\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\",\n    \"userId\": 1,\n    \"tittle\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\"\n}",
+              "Tempo de resposta 1198"
+            ],
+            "result": {
+              "duration": 2941637300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "crio um post com dados validos",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.crioUmPostComDadosValidos()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 626928000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "o post deve ser criado corretamente",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.oPostDeveSerCriadoCorretamente()"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 994300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "o status code do request deve ser 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 34
+                }
+              ],
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.oStatusCodeDoRequestDeveSer(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regressivo"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 1001300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que estou no sistema JSONPlaceholder",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.queEstouNoSistemaJSONPlaceholder()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-07T16:42:22.249Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.Hooks.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Busca post na API JSONPlaceholder",
+        "description": "",
+        "id": "gerenciamento-de-posts-na-api-jsonplaceholder;busca-post-na-api-jsonplaceholder",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "output": [
+              "DADOS ENVIADOS NO REQUEST",
+              "GEThttps://jsonplaceholder.typicode.com/posts/1",
+              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "DADOS RECEBIDOS",
+              "Status code: 200",
+              "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
+              "Tempo de resposta 102"
+            ],
+            "result": {
+              "duration": 117624100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "busco um post ja existente",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.buscoUmPostJaExistente()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 6018900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "os dados do post devem ser retornados",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.osDadosDoPostDevemSerRetornados()"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "duration": 1561800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "o status code do request deve ser 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.oStatusCodeDoRequestDeveSer(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regressivo"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 979200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que estou no sistema JSONPlaceholder",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.queEstouNoSistemaJSONPlaceholder()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-07T16:42:22.389Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1056600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.Hooks.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Atualiza post na API JSONPlaceholder",
+        "description": "",
+        "id": "gerenciamento-de-posts-na-api-jsonplaceholder;atualiza-post-na-api-jsonplaceholder",
+        "after": [
+          {
+            "result": {
+              "duration": 1001000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "output": [
+              "DADOS ENVIADOS NO REQUEST",
+              "GEThttps://jsonplaceholder.typicode.com/posts/1",
+              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "DADOS RECEBIDOS",
+              "Status code: 200",
+              "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
+              "Tempo de resposta 70"
+            ],
+            "result": {
+              "duration": 86229200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "existe um post na api",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.existeUmPostNaApi()"
+            },
+            "keyword": "E "
+          },
+          {
+            "output": [
+              "DADOS ENVIADOS NO REQUEST",
+              "PUThttps://jsonplaceholder.typicode.com/posts/1",
+              "Body: \n{\"id\":1,\"body\":\"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\",\"userId\":1,\"tittle\":\"sunt aut facere repellat provident occaecati\"}",
+              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "DADOS RECEBIDOS",
+              "Status code: 200",
+              "Payload recebido: \n{\n    \"id\": 1,\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\",\n    \"userId\": 1,\n    \"tittle\": \"sunt aut facere repellat provident occaecati\"\n}",
+              "Tempo de resposta 351"
+            ],
+            "result": {
+              "duration": 368710400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "altero os dados do post",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.alteroOsDadosDoPost()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 5002500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "o post deve ser alterado com sucesso",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.oPostDeveSerAlteradoComSucesso()"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "o status code do request deve ser 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.oStatusCodeDoRequestDeveSer(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regressivo"
+          },
+          {
+            "name": "@put"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 1019700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que estou no sistema JSONPlaceholder",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.queEstouNoSistemaJSONPlaceholder()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-07T16:42:22.867Z",
+        "before": [
+          {
+            "result": {
+              "duration": 999200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.Hooks.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Atualiza um ou mais dados do post na API JSONPlaceholder",
+        "description": "",
+        "id": "gerenciamento-de-posts-na-api-jsonplaceholder;atualiza-um-ou-mais-dados-do-post-na-api-jsonplaceholder",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.Hooks.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "output": [
+              "DADOS ENVIADOS NO REQUEST",
+              "GEThttps://jsonplaceholder.typicode.com/posts/1",
+              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "DADOS RECEBIDOS",
+              "Status code: 200",
+              "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
+              "Tempo de resposta 52"
+            ],
+            "result": {
+              "duration": 67846400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "existe um post na api",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.existeUmPostNaApi()"
+            },
+            "keyword": "E "
+          },
+          {
+            "output": [
+              "DADOS ENVIADOS NO REQUEST",
+              "PATCHhttps://jsonplaceholder.typicode.com/posts/1",
+              "Body: \n{\"id\":1,\"body\":\"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\",\"userId\":1,\"tittle\":\"sunt\"}",
+              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "DADOS RECEBIDOS",
+              "Status code: 200",
+              "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\",\n    \"tittle\": \"sunt\"\n}",
+              "Tempo de resposta 336"
+            ],
+            "result": {
+              "duration": 354158700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "altero um ou mais dados do post",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.alteroUmOuMaisDadosDoPost()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 4047200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "o post deve ser alterado com sucesso",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.oPostDeveSerAlteradoComSucesso()"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "o status code do request deve ser 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 34
+                }
+              ],
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.oStatusCodeDoRequestDeveSer(int)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regressivo"
+          },
+          {
+            "name": "@patch"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 1051200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que estou no sistema JSONPlaceholder",
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.queEstouNoSistemaJSONPlaceholder()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-01-07T16:42:23.301Z",
+        "before": [
+          {
+            "result": {
+              "duration": 992600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.typicode.jsonplaceholder.steps.Hooks.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 41,
         "name": "Deleta um post na API JSONPlaceholder",
         "description": "",
         "id": "gerenciamento-de-posts-na-api-jsonplaceholder;deleta-um-post-na-api-jsonplaceholder",
@@ -61,13 +552,13 @@
               "DADOS RECEBIDOS",
               "Status code: 200",
               "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
-              "Tempo de resposta 917"
+              "Tempo de resposta 57"
             ],
             "result": {
-              "duration": 2499535500,
+              "duration": 64681800,
               "status": "passed"
             },
-            "line": 41,
+            "line": 42,
             "name": "existe um post na api",
             "match": {
               "location": "com.typicode.jsonplaceholder.steps.PostsSteps.existeUmPostNaApi()"
@@ -82,20 +573,20 @@
               "DADOS RECEBIDOS",
               "Status code: 200",
               "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
-              "Tempo de resposta 82",
+              "Tempo de resposta 53",
               "DADOS ENVIADOS NO REQUEST",
               "DELETEhttps://jsonplaceholder.typicode.com/posts/1",
               "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
               "Status code: 200",
               "Payload recebido: \n{\n    \n}",
-              "Tempo de resposta 336"
+              "Tempo de resposta 307"
             ],
             "result": {
-              "duration": 448921700,
+              "duration": 373118100,
               "status": "passed"
             },
-            "line": 42,
+            "line": 43,
             "name": "deleto esse post",
             "match": {
               "location": "com.typicode.jsonplaceholder.steps.PostsSteps.deletoEssePost()"
@@ -104,10 +595,10 @@
           },
           {
             "result": {
-              "duration": 18161400,
+              "duration": 16494000,
               "status": "passed"
             },
-            "line": 43,
+            "line": 44,
             "name": "o post deve ser deletado com sucesso",
             "match": {
               "location": "com.typicode.jsonplaceholder.steps.PostsSteps.oPostDeveSerDeletadoComSucesso()"
@@ -116,10 +607,9 @@
           },
           {
             "result": {
-              "duration": 2004100,
               "status": "passed"
             },
-            "line": 44,
+            "line": 45,
             "name": "o status code do request deve ser 200",
             "match": {
               "arguments": [
@@ -135,6 +625,9 @@
         ],
         "tags": [
           {
+            "name": "@regressivo"
+          },
+          {
             "name": "@delete"
           }
         ]
@@ -145,6 +638,15 @@
     "id": "gerenciamento-de-posts-na-api-jsonplaceholder",
     "keyword": "Funcionalidade",
     "uri": "file:src/test/resources/features/Posts.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@regressivo",
+        "type": "Tag",
+        "location": {
+          "line": 6,
+          "column": 3
+        }
+      }
+    ]
   }
 ]
