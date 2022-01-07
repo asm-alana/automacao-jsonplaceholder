@@ -43,3 +43,15 @@ Cenario: Atualiza post na API JSONPlaceholder
     Quando deleto esse post
     Entao o post deve ser deletado com sucesso
     E o status code do request deve ser 200
+
+  @getSemSucesso
+  Cenario: Busca por post com id invalido
+    Quando busco por um post com id invalido
+    Entao os dados do post nao devem ser retornados
+    E o status code do request deve ser 404
+
+  @putSemSucesso
+  Cenario: Atualiza dados de post com id invalido
+    Quando atualizo um post com id invalido
+    Entao eh retornada a mensagem de erro "TypeError: Cannot read properties of undefined (reading 'id')"
+    E o status code do request deve ser 500

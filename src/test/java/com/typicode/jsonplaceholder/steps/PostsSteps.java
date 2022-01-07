@@ -111,4 +111,30 @@ public class PostsSteps extends ApiRequest {
                 then().
                 body("id", Matchers.is("0"));
     }
+
+    @Quando("busco por um post com id invalido")
+    public void buscoPorUmPostComIdInvalido() {
+        super.uri = prop.getProp("uri_jsonplaceholder") + POSTS_ENDPOINT + "/102" ;
+        super.body = new JSONObject();
+        super.GET();
+    }
+
+    @Entao("os dados do post nao devem ser retornados")
+    public void osDadosDoPostNaoDevemSerRetornados() {
+        assertEquals("{\n    \n}", response.asString());
+    }
+
+    @Quando("atualizo um post com id invalido")
+    public void atualizoUmPostComIdInvalido() {
+        super.uri = prop.getProp("uri_jsonplaceholder") + POSTS_ENDPOINT + "/102" ;
+        super.body = new JSONObject();
+        super.PUT();
+    }
+
+    @Entao("eh retornada a mensagem de erro {string}")
+    public void ehRetornadaAMensagemDeErro(String msgEsperada) {
+        RestAssured.given().
+                body("TypeError: Cannot read properties of undefined (reading 'id') at update (/app/node_modules/json-server/lib/server/router/plural.js:262:24) at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5) at next (/app/node_modules/express/lib/router/route.js:137:13) at next (/app/node_modules/express/lib/router/route.js:131:14) at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3) at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5) at /app/node_modules/express/lib/router/index.js:281:22 at param (/app/node_modules/express/lib/router/index.js:354:14) at param (/app/node_modules/express/lib/router/index.js:365:14) at Function.process_params (/app/node_modules/express/lib/router/index.js:410:3)").
+                then().body("TypeError:", Matchers.is(msgEsperada));
+    }
 }
