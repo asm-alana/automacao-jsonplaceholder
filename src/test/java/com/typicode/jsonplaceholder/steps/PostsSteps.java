@@ -9,16 +9,8 @@ import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
-import org.hamcrest.Matchers;
 import org.json.JSONObject;
-import org.json.XML;
-import org.junit.Assert;
 
-import java.io.IOException;
-
-import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertEquals;
 
 public class PostsSteps extends ApiRequest {
