@@ -78,9 +78,9 @@ font-src * data: blob: 'unsafe-inline';"/>
   "data": {
     "labels": [
       "com.typicode.jsonplaceholder.steps.Hooks.before(io.cucumber.java.Scenario)",
-      "busco por um post com id invalido",
-      "os dados do post nao devem ser retornados",
-      "o status code do request deve ser 404",
+      "crio um post com dados validos",
+      "o post deve ser criado corretamente",
+      "o status code do request deve ser 201",
       "com.typicode.jsonplaceholder.steps.Hooks.after()"
     ],
     "datasets": [
@@ -270,7 +270,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2022-01-11 11:37:29</span>
+            <span class="text-light">2022-01-11 11:50:50</span>
         </div>
     </nav>
     <main role="main" class="container">
@@ -280,7 +280,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                             <a href="pages/feature-scenarios/feature_0.html">Gerenciamento de posts na api JSONPlaceholder</a>
                         <span class="small">file:src/test/resources/features/Posts.feature</span>
                     </h5>
-                    <h3>Busca por post com id invalido</h3>
+                    <h3>Cria novo post na API JSONPlaceholder</h3>
             </div>
 
     <div class="row" id="scenario-detail">
@@ -298,13 +298,13 @@ font-src * data: blob: 'unsafe-inline';"/>
         <div class="card h-100">
                 <div class="card-header">Scenario Info</div>
             <div class="card-body">
-                <li class="list-group-item">Started on:<br>2022-01-11 11:37:22</li>
-                <li class="list-group-item">Ended on:<br>2022-01-11 11:37:25</li>
-            <li class="list-group-item">Test Runtime:<br>0m 02s 894ms</li>
+                <li class="list-group-item">Started on:<br>2022-01-11 11:50:41</li>
+                <li class="list-group-item">Ended on:<br>2022-01-11 11:50:45</li>
+            <li class="list-group-item">Test Runtime:<br>0m 03s 750ms</li>
             <li class="list-group-item">
                     <a href="pages/tag-scenarios/tag_regressivo.html">@regressivo</a>,
 
-                    <a href="pages/tag-scenarios/tag_getSemSucesso.html">@getSemSucesso</a>            </li>
+                    <a href="pages/tag-scenarios/tag_post.html">@post</a>            </li>
             </div>
         </div>
     </div>
@@ -354,7 +354,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 005ms
+                                0m 00s 003ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -377,13 +377,13 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">1.</span>
-                                <span data-toggle="tooltip" title="com.typicode.jsonplaceholder.steps.PostsSteps.buscoPorUmPostComIdInvalido()">
-                                    <a href="pages/step-scenarios/step_13686587.html"><span
-                                                class="keyword">Quando </span> busco por um post com id invalido</a>
+                                <span data-toggle="tooltip" title="com.typicode.jsonplaceholder.steps.PostsSteps.crioUmPostComDadosValidos()">
+                                    <a href="pages/step-scenarios/step_182572815.html"><span
+                                                class="keyword">Quando </span> crio um post com dados validos</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 02s 881ms
+                                0m 02s 947ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -391,11 +391,15 @@ font-src * data: blob: 'unsafe-inline';"/>
                             </div>
 
         <div class="row w-100 p-3 m-0 scenarioOutput">
-            <div class="w-100 text-left small p-2">DADOS ENVIADOS NO REQUEST<br><br>GEThttps://jsonplaceholder.typicode.com/posts/102<br><br>Headers: 
-{Accept=application/json, Content-Type=application/json}<br><br>DADOS RECEBIDOS<br><br>Status code: 404<br><br>Payload recebido: 
+            <div class="w-100 text-left small p-2">DADOS ENVIADOS NO REQUEST<br><br>POSThttps://jsonplaceholder.typicode.com/posts<br><br>Body: 
+{"id":101,"body":"quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto","userId":1,"tittle":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit"}<br><br>Headers: 
+{Accept=application/json, Content-Type=application/json}<br><br>DADOS RECEBIDOS<br><br>Status code: 201<br><br>Payload recebido: 
 {
-    
-}<br><br>Tempo de resposta 1218</div>
+    "id": 101,
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+    "userId": 1,
+    "tittle": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+}<br><br>Tempo de resposta 1266</div>
         </div>
                         </div>
 
@@ -403,13 +407,13 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <div class="row row_passed table-row-passed">
                             <div class="col-9 text-left">
                                 <span class="text-left">2.</span>
-                                <span data-toggle="tooltip" title="com.typicode.jsonplaceholder.steps.PostsSteps.osDadosDoPostNaoDevemSerRetornados()">
-                                    <a href="pages/step-scenarios/step_0509544136.html"><span
-                                                class="keyword">Entao </span> os dados do post nao devem ser retornados</a>
+                                <span data-toggle="tooltip" title="com.typicode.jsonplaceholder.steps.PostsSteps.oPostDeveSerCriadoCorretamente()">
+                                    <a href="pages/step-scenarios/step_166196622.html"><span
+                                                class="keyword">Entao </span> o post deve ser criado corretamente</a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 002ms
+                                0m 00s 792ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -424,11 +428,11 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <span class="text-left">3.</span>
                                 <span data-toggle="tooltip" title="com.typicode.jsonplaceholder.steps.PostsSteps.oStatusCodeDoRequestDeveSer(int)">
                                     <a href="pages/step-scenarios/step_02075539551.html"><span
-                                                class="keyword">E </span> o status code do request deve ser <span class="parameter">404</span></a>
+                                                class="keyword">E </span> o status code do request deve ser <span class="parameter">201</span></a>
                                 </span>
                             </div>
                             <div class="col-2 text-left small">
-                                0m 00s 000ms
+                                0m 00s 001ms
                             </div>
                             <div class="col-1 text-right">
     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
@@ -447,7 +451,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.7.0 - Report generated on 2022-01-11 11:37:29.</span>
+        <span>Cluecumber Report Plugin version 2.7.0 - Report generated on 2022-01-11 11:50:50.</span>
     </div>
 </footer>    </body>
     </html>

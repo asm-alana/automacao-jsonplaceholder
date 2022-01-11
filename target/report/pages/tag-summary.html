@@ -77,16 +77,31 @@ font-src * data: blob: 'unsafe-inline';"/>
             var chart = new Chart(ctx, {
   "data": {
     "labels": [
+      "@put",
+      "@post",
+      "@patch",
       "@getSemSucesso",
-      "@regressivo"
+      "@get",
+      "@regressivo",
+      "@delete"
     ],
     "datasets": [
       {
         "data": [
           1,
+          1,
+          1,
+          1,
+          1,
+          6,
           1
         ],
         "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)"
         ],
@@ -95,9 +110,19 @@ font-src * data: blob: 'unsafe-inline';"/>
       {
         "data": [
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)"
         ],
@@ -106,9 +131,19 @@ font-src * data: blob: 'unsafe-inline';"/>
       {
         "data": [
           0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)"
         ],
@@ -128,7 +163,7 @@ font-src * data: blob: 'unsafe-inline';"/>
           "stacked": true,
           "scaleLabel": {
             "display": true,
-            "labelString": "2 Tags"
+            "labelString": "7 Tags"
           },
           "stepSize": 0.0
         }
@@ -137,7 +172,7 @@ font-src * data: blob: 'unsafe-inline';"/>
         {
           "ticks": {
             "min": 0,
-            "stepSize": 1,
+            "stepSize": 6,
             "display": true
           },
           "stacked": true,
@@ -240,7 +275,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2022-01-11 11:37:29</span>
+            <span class="text-light">2022-01-11 11:50:50</span>
         </div>
     </nav>
     <main role="main" class="container">
@@ -265,14 +300,14 @@ font-src * data: blob: 'unsafe-inline';"/>
                 <div class="card-header">Tag Summary</div>
             <div class="card-body">
             <ul class="list-group list-group-flush" data-cluecumber-item="tag-summary">
-                <li class="list-group-item">2         Tags
+                <li class="list-group-item">7         Tags
  in
                     <br>
-                    1 Tagged         Scenario
+                    6 Tagged         Scenarios
 
                 </li>
                 <li class="list-group-item">
-                    1 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
+                    6 passed     <i class="color-passed cluecumber-icon icon-passed" data-toggle="tooltip"
        title="passed"><span style="display:none">passed</span></i>
 
                     <br>
@@ -314,6 +349,30 @@ font-src * data: blob: 'unsafe-inline';"/>
                 <tbody>
                     <tr>
                         <td class="text-left"><a
+                                    href="pages/tag-scenarios/tag_put.html">@put</a></td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right passedCell">1</td>
+                        <td class="text-right failedCell">0</td>
+                        <td class="text-right skippedCell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><a
+                                    href="pages/tag-scenarios/tag_post.html">@post</a></td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right passedCell">1</td>
+                        <td class="text-right failedCell">0</td>
+                        <td class="text-right skippedCell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><a
+                                    href="pages/tag-scenarios/tag_patch.html">@patch</a></td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right passedCell">1</td>
+                        <td class="text-right failedCell">0</td>
+                        <td class="text-right skippedCell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><a
                                     href="pages/tag-scenarios/tag_getSemSucesso.html">@getSemSucesso</a></td>
                         <td class="text-right"><strong>1</strong></td>
                         <td class="text-right passedCell">1</td>
@@ -322,7 +381,23 @@ font-src * data: blob: 'unsafe-inline';"/>
                     </tr>
                     <tr>
                         <td class="text-left"><a
+                                    href="pages/tag-scenarios/tag_get.html">@get</a></td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right passedCell">1</td>
+                        <td class="text-right failedCell">0</td>
+                        <td class="text-right skippedCell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><a
                                     href="pages/tag-scenarios/tag_regressivo.html">@regressivo</a></td>
+                        <td class="text-right"><strong>6</strong></td>
+                        <td class="text-right passedCell">6</td>
+                        <td class="text-right failedCell">0</td>
+                        <td class="text-right skippedCell">0</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><a
+                                    href="pages/tag-scenarios/tag_delete.html">@delete</a></td>
                         <td class="text-right"><strong>1</strong></td>
                         <td class="text-right passedCell">1</td>
                         <td class="text-right failedCell">0</td>
@@ -339,7 +414,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.7.0 - Report generated on 2022-01-11 11:37:29.</span>
+        <span>Cluecumber Report Plugin version 2.7.0 - Report generated on 2022-01-11 11:50:50.</span>
     </div>
 </footer>    </body>
     </html>
