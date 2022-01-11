@@ -1,7 +1,6 @@
 package com.typicode.jsonplaceholder.api;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class ApiRequest extends ApiUtils implements ApiVerbos{
 

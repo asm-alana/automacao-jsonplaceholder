@@ -10,8 +10,12 @@ import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import org.json.JSONObject;
+import org.json.XML;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class PostsSteps extends ApiRequest {
 
@@ -115,6 +119,19 @@ public class PostsSteps extends ApiRequest {
     @Entao("os dados do post nao devem ser retornados")
     public void osDadosDoPostNaoDevemSerRetornados() {
         assertEquals("{\n    \n}", response.asString());
+    }
+
+    @Quando("atualizo um post com id invalido")
+    public void atualizoUmPostComIdInvalido() {
+        Posts posts = Posts.builder().userId(100).id(102).tittle("teste").body("teste").build();
+        super.uri = prop.getProp("uri_jsonplaceholder") + POSTS_ENDPOINT + "/" + posts.getId();
+        super.body = new JSONObject(new Gson().toJson(posts));
+        super.PUT();
+    }
+
+    @Entao("eh retornada a mensagem de erro {string}")
+    public void ehRetornadaAMensagemDeErro(String msgEsperada) {
+       assertTrue(msgEsperada, response.xmlPath().getString("html.body").startsWith("TypeError: Cannot read properties of undefined (reading 'id')"));
     }
 
 }
