@@ -10,12 +10,15 @@ import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.json.JSONObject;
+import org.json.XML;
 import org.junit.Assert;
 
 import java.io.IOException;
 
+import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertEquals;
 
 public class PostsSteps extends ApiRequest {
@@ -106,15 +109,13 @@ public class PostsSteps extends ApiRequest {
 
     @Entao("o post deve ser deletado com sucesso")
     public void oPostDeveSerDeletadoComSucesso() {
-        RestAssured.given().
-                body("userId=0, id=0, tittle=null, body=null").
-                then().
-                body("id", Matchers.is("0"));
+        assertEquals("{\n    \n}", response.asString());
     }
 
     @Quando("busco por um post com id invalido")
     public void buscoPorUmPostComIdInvalido() {
-        super.uri = prop.getProp("uri_jsonplaceholder") + POSTS_ENDPOINT + "/102" ;
+        int id = 102;
+        super.uri = prop.getProp("uri_jsonplaceholder") + POSTS_ENDPOINT + "/" + id;
         super.body = new JSONObject();
         super.GET();
     }
@@ -124,17 +125,4 @@ public class PostsSteps extends ApiRequest {
         assertEquals("{\n    \n}", response.asString());
     }
 
-    @Quando("atualizo um post com id invalido")
-    public void atualizoUmPostComIdInvalido() {
-        super.uri = prop.getProp("uri_jsonplaceholder") + POSTS_ENDPOINT + "/102" ;
-        super.body = new JSONObject();
-        super.PUT();
-    }
-
-    @Entao("eh retornada a mensagem de erro {string}")
-    public void ehRetornadaAMensagemDeErro(String msgEsperada) {
-        RestAssured.given().
-                body("TypeError: Cannot read properties of undefined (reading 'id') at update (/app/node_modules/json-server/lib/server/router/plural.js:262:24) at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5) at next (/app/node_modules/express/lib/router/route.js:137:13) at next (/app/node_modules/express/lib/router/route.js:131:14) at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3) at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5) at /app/node_modules/express/lib/router/index.js:281:22 at param (/app/node_modules/express/lib/router/index.js:354:14) at param (/app/node_modules/express/lib/router/index.js:365:14) at Function.process_params (/app/node_modules/express/lib/router/index.js:410:3)").
-                then().body("TypeError:", Matchers.is(msgEsperada));
-    }
 }

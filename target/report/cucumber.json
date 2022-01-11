@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4975000,
+              "duration": 5437300,
               "status": "passed"
             },
             "line": 12,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-01-07T19:10:51.142Z",
+        "start_timestamp": "2022-01-11T14:37:22.879Z",
         "before": [
           {
             "result": {
-              "duration": 5569700,
+              "duration": 4119400,
               "status": "passed"
             },
             "match": {
@@ -36,10 +36,10 @@
             }
           }
         ],
-        "line": 54,
-        "name": "Atualiza dados de post com id invalido",
+        "line": 48,
+        "name": "Busca por post com id invalido",
         "description": "",
-        "id": "gerenciamento-de-posts-na-api-jsonplaceholder;atualiza-dados-de-post-com-id-invalido",
+        "id": "gerenciamento-de-posts-na-api-jsonplaceholder;busca-por-post-com-id-invalido",
         "after": [
           {
             "result": {
@@ -56,53 +56,47 @@
           {
             "output": [
               "DADOS ENVIADOS NO REQUEST",
-              "PUThttps://jsonplaceholder.typicode.com/posts/102",
+              "GEThttps://jsonplaceholder.typicode.com/posts/102",
               "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
-              "Status code: 500",
-              "Payload recebido: \n\u003chtml\u003e\n  \u003cbody\u003eTypeError: Cannot read properties of undefined (reading \u0027id\u0027)\n    at update (/app/node_modules/json-server/lib/server/router/plural.js:262:24)\n    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/app/node_modules/express/lib/router/route.js:137:13)\n    at next (/app/node_modules/express/lib/router/route.js:131:14)\n    at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)\n    at /app/node_modules/express/lib/router/index.js:281:22\n    at param (/app/node_modules/express/lib/router/index.js:354:14)\n    at param (/app/node_modules/express/lib/router/index.js:365:14)\n    at Function.process_params (/app/node_modules/express/lib/router/index.js:410:3)\u003c/body\u003e\n\u003c/html\u003e",
-              "Tempo de resposta 1254"
+              "Status code: 404",
+              "Payload recebido: \n{\n    \n}",
+              "Tempo de resposta 1218"
             ],
             "result": {
-              "duration": 3293353700,
+              "duration": 2881284700,
               "status": "passed"
             },
-            "line": 55,
-            "name": "atualizo um post com id invalido",
+            "line": 49,
+            "name": "busco por um post com id invalido",
             "match": {
-              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.atualizoUmPostComIdInvalido()"
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.buscoPorUmPostComIdInvalido()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 16585300,
+              "duration": 2998500,
               "status": "passed"
             },
-            "line": 56,
-            "name": "eh retornada a mensagem de erro \"TypeError: Cannot read properties of undefined (reading \u0027id\u0027)\"",
+            "line": 50,
+            "name": "os dados do post nao devem ser retornados",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"TypeError: Cannot read properties of undefined (reading \u0027id\u0027)\"",
-                  "offset": 32
-                }
-              ],
-              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.ehRetornadaAMensagemDeErro(java.lang.String)"
+              "location": "com.typicode.jsonplaceholder.steps.PostsSteps.osDadosDoPostNaoDevemSerRetornados()"
             },
             "keyword": "Entao "
           },
           {
             "result": {
-              "duration": 3028800,
+              "duration": 997400,
               "status": "passed"
             },
-            "line": 57,
-            "name": "o status code do request deve ser 500",
+            "line": 51,
+            "name": "o status code do request deve ser 404",
             "match": {
               "arguments": [
                 {
-                  "val": "500",
+                  "val": "404",
                   "offset": 34
                 }
               ],
@@ -116,7 +110,7 @@
             "name": "@regressivo"
           },
           {
-            "name": "@putSemSucesso"
+            "name": "@getSemSucesso"
           }
         ]
       }

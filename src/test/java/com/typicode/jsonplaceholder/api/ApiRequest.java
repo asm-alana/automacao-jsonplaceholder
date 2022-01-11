@@ -1,6 +1,7 @@
 package com.typicode.jsonplaceholder.api;
 
 import static io.restassured.RestAssured.given;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class ApiRequest extends ApiUtils implements ApiVerbos{
 
@@ -25,12 +26,13 @@ public class ApiRequest extends ApiUtils implements ApiVerbos{
 
     @Override
     public void PUT() {
-        response = given().
+        response = given().log().all().
                 relaxedHTTPSValidation().
                 headers(headers).
                 body(body.toString()).
                 put(uri);
         super.log("PUT");
+
     }
 
     @Override
