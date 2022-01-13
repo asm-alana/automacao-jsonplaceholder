@@ -14,6 +14,7 @@ public class ApiUtils extends LogUtils {
     protected static JSONObject body;
     protected static String uri;
     protected static Map<String, String> headers = new HashMap<>();
+    protected static String token;
 
     public void log(String verbo){
 

@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3997600,
+              "duration": 4001700,
               "status": "passed"
             },
             "line": 12,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-01-11T19:23:13.769Z",
+        "start_timestamp": "2022-01-13T20:58:48.231Z",
         "before": [
           {
             "result": {
-              "duration": 5365100,
+              "duration": 4005800,
               "status": "passed"
             },
             "match": {
@@ -58,14 +58,14 @@
               "DADOS ENVIADOS NO REQUEST",
               "POSThttps://jsonplaceholder.typicode.com/posts",
               "Body: \n{\"id\":101,\"body\":\"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\",\"userId\":1,\"tittle\":\"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\"}",
-              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "Headers: \n{Authorization\u003dAPI NAO REQUER TOKEN, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
               "Status code: 201",
               "Payload recebido: \n{\n    \"id\": 101,\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\",\n    \"userId\": 1,\n    \"tittle\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\"\n}",
-              "Tempo de resposta 1284"
+              "Tempo de resposta 1205"
             ],
             "result": {
-              "duration": 2984677100,
+              "duration": 2980615000,
               "status": "passed"
             },
             "line": 16,
@@ -77,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 693657900,
+              "duration": 731667100,
               "status": "passed"
             },
             "line": 17,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 999200,
+              "duration": 1285800,
               "status": "passed"
             },
             "line": 18,
@@ -124,7 +124,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2008900,
+              "duration": 2094200,
               "status": "passed"
             },
             "line": 12,
@@ -137,7 +137,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-01-11T19:23:17.549Z",
+        "start_timestamp": "2022-01-13T20:58:52.061Z",
         "before": [
           {
             "result": {
@@ -155,6 +155,7 @@
         "after": [
           {
             "result": {
+              "duration": 519400,
               "status": "passed"
             },
             "match": {
@@ -169,14 +170,14 @@
             "output": [
               "DADOS ENVIADOS NO REQUEST",
               "GEThttps://jsonplaceholder.typicode.com/posts/1",
-              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "Headers: \n{Authorization\u003dAPI NAO REQUER TOKEN, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
               "Status code: 200",
               "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
-              "Tempo de resposta 117"
+              "Tempo de resposta 172"
             ],
             "result": {
-              "duration": 132505700,
+              "duration": 197401100,
               "status": "passed"
             },
             "line": 22,
@@ -188,7 +189,7 @@
           },
           {
             "result": {
-              "duration": 8000700,
+              "duration": 8492500,
               "status": "passed"
             },
             "line": 23,
@@ -200,7 +201,7 @@
           },
           {
             "result": {
-              "duration": 1001400,
+              "duration": 1116600,
               "status": "passed"
             },
             "line": 24,
@@ -235,7 +236,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1009000,
+              "duration": 997000,
               "status": "passed"
             },
             "line": 12,
@@ -248,7 +249,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-01-11T19:23:17.705Z",
+        "start_timestamp": "2022-01-13T20:58:52.305Z",
         "before": [
           {
             "result": {
@@ -280,14 +281,14 @@
             "output": [
               "DADOS ENVIADOS NO REQUEST",
               "GEThttps://jsonplaceholder.typicode.com/posts/1",
-              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "Headers: \n{Authorization\u003dAPI NAO REQUER TOKEN, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
               "Status code: 200",
               "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
-              "Tempo de resposta 78"
+              "Tempo de resposta 94"
             ],
             "result": {
-              "duration": 91299100,
+              "duration": 114296300,
               "status": "passed"
             },
             "line": 28,
@@ -302,14 +303,14 @@
               "DADOS ENVIADOS NO REQUEST",
               "PUThttps://jsonplaceholder.typicode.com/posts/1",
               "Body: \n{\"id\":1,\"body\":\"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\",\"userId\":1,\"tittle\":\"sunt aut facere repellat provident occaecati\"}",
-              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "Headers: \n{Authorization\u003dAPI NAO REQUER TOKEN, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
               "Status code: 200",
               "Payload recebido: \n{\n    \"id\": 1,\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\",\n    \"userId\": 1,\n    \"tittle\": \"sunt aut facere repellat provident occaecati\"\n}",
               "Tempo de resposta 327"
             ],
             "result": {
-              "duration": 381154200,
+              "duration": 390001600,
               "status": "passed"
             },
             "line": 29,
@@ -321,7 +322,7 @@
           },
           {
             "result": {
-              "duration": 4996000,
+              "duration": 6358800,
               "status": "passed"
             },
             "line": 30,
@@ -367,7 +368,7 @@
         "steps": [
           {
             "result": {
-              "duration": 925000,
+              "duration": 1001100,
               "status": "passed"
             },
             "line": 12,
@@ -380,7 +381,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-01-11T19:23:18.195Z",
+        "start_timestamp": "2022-01-13T20:58:52.838Z",
         "before": [
           {
             "result": {
@@ -398,6 +399,7 @@
         "after": [
           {
             "result": {
+              "duration": 1016000,
               "status": "passed"
             },
             "match": {
@@ -412,14 +414,14 @@
             "output": [
               "DADOS ENVIADOS NO REQUEST",
               "GEThttps://jsonplaceholder.typicode.com/posts/1",
-              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "Headers: \n{Authorization\u003dAPI NAO REQUER TOKEN, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
               "Status code: 200",
               "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
-              "Tempo de resposta 81"
+              "Tempo de resposta 70"
             ],
             "result": {
-              "duration": 101877700,
+              "duration": 81084200,
               "status": "passed"
             },
             "line": 35,
@@ -434,14 +436,14 @@
               "DADOS ENVIADOS NO REQUEST",
               "PATCHhttps://jsonplaceholder.typicode.com/posts/1",
               "Body: \n{\"id\":1,\"body\":\"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\",\"userId\":1,\"tittle\":\"sunt\"}",
-              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "Headers: \n{Authorization\u003dAPI NAO REQUER TOKEN, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
               "Status code: 200",
               "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\",\n    \"tittle\": \"sunt\"\n}",
-              "Tempo de resposta 335"
+              "Tempo de resposta 326"
             ],
             "result": {
-              "duration": 344403600,
+              "duration": 339046400,
               "status": "passed"
             },
             "line": 36,
@@ -453,7 +455,7 @@
           },
           {
             "result": {
-              "duration": 4094400,
+              "duration": 7058700,
               "status": "passed"
             },
             "line": 37,
@@ -465,7 +467,6 @@
           },
           {
             "result": {
-              "duration": 843000,
               "status": "passed"
             },
             "line": 38,
@@ -500,7 +501,7 @@
         "steps": [
           {
             "result": {
-              "duration": 995600,
+              "duration": 2012800,
               "status": "passed"
             },
             "line": 12,
@@ -513,7 +514,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-01-11T19:23:18.654Z",
+        "start_timestamp": "2022-01-13T20:58:53.279Z",
         "before": [
           {
             "result": {
@@ -531,6 +532,7 @@
         "after": [
           {
             "result": {
+              "duration": 997900,
               "status": "passed"
             },
             "match": {
@@ -545,14 +547,14 @@
             "output": [
               "DADOS ENVIADOS NO REQUEST",
               "GEThttps://jsonplaceholder.typicode.com/posts/1",
-              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "Headers: \n{Authorization\u003dAPI NAO REQUER TOKEN, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
               "Status code: 200",
               "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
-              "Tempo de resposta 69"
+              "Tempo de resposta 80"
             ],
             "result": {
-              "duration": 74992400,
+              "duration": 91931300,
               "status": "passed"
             },
             "line": 42,
@@ -566,21 +568,21 @@
             "output": [
               "DADOS ENVIADOS NO REQUEST",
               "GEThttps://jsonplaceholder.typicode.com/posts/1",
-              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "Headers: \n{Authorization\u003dAPI NAO REQUER TOKEN, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
               "Status code: 200",
               "Payload recebido: \n{\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"sunt aut facere repellat provident occaecati excepturi optio reprehenderit\",\n    \"body\": \"quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto\"\n}",
-              "Tempo de resposta 66",
+              "Tempo de resposta 68",
               "DADOS ENVIADOS NO REQUEST",
               "DELETEhttps://jsonplaceholder.typicode.com/posts/1",
-              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "Headers: \n{Authorization\u003dAPI NAO REQUER TOKEN, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
               "Status code: 200",
               "Payload recebido: \n{\n    \n}",
-              "Tempo de resposta 310"
+              "Tempo de resposta 346"
             ],
             "result": {
-              "duration": 391450200,
+              "duration": 429607400,
               "status": "passed"
             },
             "line": 43,
@@ -592,6 +594,7 @@
           },
           {
             "result": {
+              "duration": 1001200,
               "status": "passed"
             },
             "line": 44,
@@ -637,7 +640,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1036100,
+              "duration": 942700,
               "status": "passed"
             },
             "line": 12,
@@ -650,10 +653,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-01-11T19:23:19.128Z",
+        "start_timestamp": "2022-01-13T20:58:53.812Z",
         "before": [
           {
             "result": {
+              "duration": 993000,
               "status": "passed"
             },
             "match": {
@@ -682,14 +686,14 @@
             "output": [
               "DADOS ENVIADOS NO REQUEST",
               "GEThttps://jsonplaceholder.typicode.com/posts/102",
-              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "Headers: \n{Authorization\u003dAPI NAO REQUER TOKEN, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
               "Status code: 404",
               "Payload recebido: \n{\n    \n}",
-              "Tempo de resposta 78"
+              "Tempo de resposta 316"
             ],
             "result": {
-              "duration": 81996700,
+              "duration": 322023100,
               "status": "passed"
             },
             "line": 49,
@@ -712,6 +716,7 @@
           },
           {
             "result": {
+              "duration": 963100,
               "status": "passed"
             },
             "line": 51,
@@ -746,7 +751,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1009800,
+              "duration": 1015800,
               "status": "passed"
             },
             "line": 12,
@@ -759,7 +764,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-01-11T19:23:19.219Z",
+        "start_timestamp": "2022-01-13T20:58:54.148Z",
         "before": [
           {
             "result": {
@@ -777,6 +782,7 @@
         "after": [
           {
             "result": {
+              "duration": 975800,
               "status": "passed"
             },
             "match": {
@@ -792,14 +798,14 @@
               "DADOS ENVIADOS NO REQUEST",
               "PUThttps://jsonplaceholder.typicode.com/posts/102",
               "Body: \n{\"id\":102,\"body\":\"teste\",\"userId\":100,\"tittle\":\"teste\"}",
-              "Headers: \n{Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
+              "Headers: \n{Authorization\u003dAPI NAO REQUER TOKEN, Accept\u003dapplication/json, Content-Type\u003dapplication/json}",
               "DADOS RECEBIDOS",
               "Status code: 500",
               "Payload recebido: \n\u003chtml\u003e\n  \u003cbody\u003eTypeError: Cannot read properties of undefined (reading \u0027id\u0027)\n    at update (/app/node_modules/json-server/lib/server/router/plural.js:262:24)\n    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)\n    at next (/app/node_modules/express/lib/router/route.js:137:13)\n    at next (/app/node_modules/express/lib/router/route.js:131:14)\n    at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)\n    at /app/node_modules/express/lib/router/index.js:281:22\n    at param (/app/node_modules/express/lib/router/index.js:354:14)\n    at param (/app/node_modules/express/lib/router/index.js:365:14)\n    at Function.process_params (/app/node_modules/express/lib/router/index.js:410:3)\u003c/body\u003e\n\u003c/html\u003e",
-              "Tempo de resposta 316"
+              "Tempo de resposta 315"
             ],
             "result": {
-              "duration": 454525600,
+              "duration": 510063000,
               "status": "passed"
             },
             "line": 55,
@@ -811,7 +817,7 @@
           },
           {
             "result": {
-              "duration": 578223500,
+              "duration": 675562100,
               "status": "passed"
             },
             "line": 56,
@@ -829,7 +835,6 @@
           },
           {
             "result": {
-              "duration": 994400,
               "status": "passed"
             },
             "line": 57,

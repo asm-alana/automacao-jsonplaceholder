@@ -10,10 +10,7 @@ import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Quando;
 import org.json.JSONObject;
-import org.json.XML;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -28,7 +25,7 @@ public class PostsSteps extends ApiRequest {
     @Dado("que estou no sistema JSONPlaceholder")
     public void queEstouNoSistemaJSONPlaceholder() {
         super.uri = prop.getProp("uri_jsonplaceholder") + POSTS_ENDPOINT;
-        super.headers = apiHeaders.jsonPlaceHeaders();
+        super.headers = apiHeaders.jsonPlaceHeaders("API NAO REQUER TOKEN");
     }
 
     @Quando("crio um post com dados validos")
@@ -131,7 +128,9 @@ public class PostsSteps extends ApiRequest {
 
     @Entao("eh retornada a mensagem de erro {string}")
     public void ehRetornadaAMensagemDeErro(String msgEsperada) {
-       assertTrue(msgEsperada, response.xmlPath().getString("html.body").startsWith("TypeError: Cannot read properties of undefined (reading 'id')"));
+       assertTrue(msgEsperada, response.
+               xmlPath().
+               getString("html.body").
+               startsWith("TypeError: Cannot read properties of undefined (reading 'id')"));
     }
-
 }
